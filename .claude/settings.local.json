@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "WebFetch(domain:shopify.engineering)",
+      "Bash(ruby --version)",
+      "Bash(gem --version)",
+      "Bash(mkdir:*)",
+      "Bash(bundle install)",
+      "Bash(rbenv versions:*)",
+      "Bash(rbenv install:*)",
+      "Bash(rbenv local:*)",
+      "Bash(chmod:*)",
+      "Bash(./exe/glaser:*)",
+      "Bash(export OPENAI_API_KEY=dummy_key)",
+      "Bash(gem list)",
+      "Bash(ruby:*)",
+      "Bash(roast:*)",
+      "Bash(rm:*)",
+      "Bash(mv:*)",
+      "Bash(ls:*)"
+    ],
+    "deny": []
+  }
+}

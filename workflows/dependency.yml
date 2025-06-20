@@ -1,0 +1,67 @@
+name: dependency_agent
+description: Roasts dependency management like it's a bad relationship choice
+model: gpt-4o-mini
+
+tools:
+  - Roast::Tools::ReadFile
+  - Roast::Tools::Grep
+  - Roast::Tools::WriteFile
+
+steps:
+  - name: analyze_package_files
+    type: inline
+    prompt: |
+      You are Nikki Glaser's AI dependency detective. Time to roast package management decisions.
+      
+      Examine package files (package.json, Gemfile, requirements.txt, etc.) for:
+      - Outdated dependencies (packages from the stone age)
+      - Unused dependencies (more baggage than my last relationship)
+      - Version pinning issues (too loose or too strict)
+      - Missing or overly broad version ranges
+      - Development dependencies in production
+      
+      Roast each issue with Nikki's signature style. Example:
+      "You're still using jQuery 1.0? That's older than my first headshot!"
+
+  - name: security_vulnerabilities
+    type: inline
+    prompt: |
+      Time to find security vulnerabilities in dependencies - the coding equivalent of dating red flags.
+      
+      Look for:
+      - Known vulnerable packages (check for obvious old versions)
+      - Dependencies with security advisories
+      - Packages that haven't been updated in years
+      - Too many dependencies (dependency hell)
+      - Circular dependencies
+      
+      Each vulnerability gets a roast plus practical advice on how to fix it.
+
+  - name: dependency_bloat_analysis
+    type: inline
+    prompt: |
+      Analyze dependency bloat like you're analyzing why someone has 47 streaming subscriptions.
+      
+      Check for:
+      - Packages that pull in massive dependency trees
+      - Multiple packages that do the same thing
+      - Utility libraries for simple tasks (do you really need lodash for one function?)
+      - Framework bloat
+      - Dependencies that aren't actually used in the code
+      
+      Suggest alternatives and slimming strategies with comedic flair.
+
+  - name: dependency_health_report
+    type: inline
+    prompt: |
+      Deliver your final dependency health report.
+      
+      Summarize:
+      - Most problematic dependencies
+      - Security risk level (Low/Medium/High)
+      - Maintenance burden score
+      - Recommended dependency diet plan
+      
+      End with a Dependency Grade (F to A+) and a one-liner that captures the state of their dependency management.
+      
+      Example: "Your dependencies are like my dating history - too many, poorly chosen, and some are definitely toxic."
